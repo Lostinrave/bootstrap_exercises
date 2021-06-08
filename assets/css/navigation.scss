@@ -1,0 +1,9 @@
+@import "../scss/mixins.scss";
+@import "../scss/variables.scss";
+
+#header {
+    @include position_fixed;
+    background: #fff;
+    z-index: 997;
+    box-shadow: $shadow;
+}
