@@ -8,4 +8,11 @@
   -webkit-box-shadow: -2px 13px 20px -6px #83d5f7;
           box-shadow: -2px 13px 20px -6px #83d5f7;
 }
+
+.submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -7px;
+}
 /*# sourceMappingURL=navigation.css.map */

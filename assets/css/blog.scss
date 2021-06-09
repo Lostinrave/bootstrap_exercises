@@ -1,5 +1,5 @@
 @import "navigation.scss";
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 body {
   color: #222;
   font-family: "Audiowide", cursive;
@@ -17,12 +17,60 @@ body {
   background-size: cover;
   background-position: center center;
   min-height: 700px;
-  .card-img-overlay {
+  .overlay-bg {
     background-color: rgba(0, 0, 0, 0.6);
   }
 }
 .banner-title {
-    font-weight: 700;
-    margin-left: auto;
-    margin-right: auto;
+  font-weight: 700;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 2.5rem 0;
+}
+.banner-p-m {
+  margin-top: 70px;
+  padding: 90px 0;
+}
+
+/* banner button */
+.btn-banner {
+  border-radius: 0%;
+  background: #fff;
+  color: #222;
+  font-weight: 600;
+  font-size: 0.625rem;
+  padding: 0.5rem 1.25rem;
+  &:hover {
+    background: transparent;
+    border-color: #2d2b70;
+    color: #2d2b70;
+  }
+}
+/* Section: banner-area end */
+
+/*Section: top-category start */
+.top-category {
+  padding: 90px 0;
+}
+
+.overlay-bg-tcategory {
+  margin: 7%;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+.span-line {
+  display: inline-block;
+  background: #fff;
+  width: 60%;
+  height: 1%;
+}
+.card {
+  border: none;
+  &:hover {
+    box-shadow: 0px 10px 20px 20px #2d2b70;
+    transition: $transition;
+    .card-img-overlay:hover {
+      background: #2d2b70c4;
+      transition: $transition;
+    }
+  }
 }

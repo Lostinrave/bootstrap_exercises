@@ -2,8 +2,15 @@
 @import "../scss/variables.scss";
 
 #header {
-    @include position_fixed;
-    background: #fff;
-    z-index: 997;
-    box-shadow: $shadow;
+  @include position_fixed;
+  background: #fff;
+  z-index: 997;
+  box-shadow: $shadow;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  left: 100%;
+  top: -7px;
+
 }
