@@ -1,5 +1,7 @@
+
 @import "navigation.scss";
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css");
 body {
   color: #222;
   font-family: "Audiowide", cursive;
@@ -8,6 +10,10 @@ body {
   line-height: 1.625em;
   position: relative;
   padding-top: 95px;
+}
+a {
+  text-decoration: none;
+  color: #222;
 }
 /* Section: banner-area start */
 .banner-area {
@@ -34,12 +40,9 @@ body {
 
 /* banner button */
 .btn-banner {
-  border-radius: 0%;
+  @include btn-blog;
   background: #fff;
   color: #222;
-  font-weight: 600;
-  font-size: 0.625rem;
-  padding: 0.5rem 1.25rem;
   &:hover {
     background: transparent;
     border-color: #2d2b70;
@@ -72,5 +75,16 @@ body {
       background: #2d2b70c4;
       transition: $transition;
     }
+  }
+}
+/* Section: post-content start */
+
+.btn-pcontent {
+  @include btn-blog;
+  color: #222;
+
+  &:hover {
+    background: #2d2b70;
+    color: #fff;
   }
 }

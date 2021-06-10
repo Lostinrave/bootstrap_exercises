@@ -71,3 +71,9 @@
   outline: none;
   cursor: pointer;
 }
+@mixin btn-blog {
+  border-radius: 0%;
+  font-weight: 600;
+  font-size: 0.625rem;
+  padding: 0.5rem 1.25rem;
+}

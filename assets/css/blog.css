@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@import url("https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css");
 #header {
   position: fixed;
   left: 0;
@@ -25,6 +26,11 @@ body {
   line-height: 1.625em;
   position: relative;
   padding-top: 95px;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
 }
 
 /* Section: banner-area start */
@@ -56,11 +62,11 @@ body {
 /* banner button */
 .btn-banner {
   border-radius: 0%;
-  background: #fff;
-  color: #222;
   font-weight: 600;
   font-size: 0.625rem;
   padding: 0.5rem 1.25rem;
+  background: #fff;
+  color: #222;
 }
 
 .btn-banner:hover {
@@ -102,5 +108,19 @@ body {
   background: #2d2b70c4;
   -webkit-transition: all 800ms;
   transition: all 800ms;
+}
+
+/* Section: post-content start */
+.btn-pcontent {
+  border-radius: 0%;
+  font-weight: 600;
+  font-size: 0.625rem;
+  padding: 0.5rem 1.25rem;
+  color: #222;
+}
+
+.btn-pcontent:hover {
+  background: #2d2b70;
+  color: #fff;
 }
 /*# sourceMappingURL=blog.css.map */
