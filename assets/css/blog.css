@@ -13,13 +13,40 @@
           box-shadow: -2px 13px 20px -6px #83d5f7;
 }
 
-.submenu {
-  display: none;
-  position: absolute;
-  left: 100%;
-  top: -7px;
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+  .dropdown-menu li {
+    position: relative;
+  }
+  .nav-item .submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: -7px;
+  }
+  .nav-item .submenu-left {
+    right: 100%;
+    left: auto;
+  }
+  .dropdown-menu > li:hover {
+    background-color: #f1f1f1;
+  }
+  .dropdown-menu > li:hover > .submenu {
+    display: block;
+  }
 }
 
+/* ============ desktop view .end// ============ */
+/* ============ small devices ============ */
+@media (max-width: 991px) {
+  .dropdown-menu .dropdown-menu {
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+    margin-bottom: .5rem;
+  }
+}
+
+/* ============ small devices .end// ============ */
 body {
   color: #222;
   font-family: "Audiowide", cursive;
@@ -28,6 +55,16 @@ body {
   line-height: 1.625em;
   position: relative;
   padding-top: 95px;
+}
+
+@media (max-width: 992px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.bg-primary {
+  background-color: #2d2b70 !important;
 }
 
 a {
@@ -126,6 +163,7 @@ a {
   color: #fff;
 }
 
+/* Search form custom CSS start */
 .search-form input[type="search"] {
   color: #fff;
   border: none;
@@ -145,7 +183,12 @@ a {
   margin-bottom: -0.25rem;
 }
 
+.form-outline {
+  max-width: 80%;
+}
+
 #btn-search {
+  max-width: 20%;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   background-color: #2d2b70;
@@ -154,4 +197,6 @@ a {
 #btn-search:focus, #btn-search:hover {
   background-color: #83d5f7;
 }
+
+/* Search form custom CSS end */
 /*# sourceMappingURL=blog.css.map */

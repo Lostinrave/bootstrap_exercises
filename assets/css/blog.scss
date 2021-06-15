@@ -11,6 +11,12 @@ body {
   line-height: 1.625em;
   position: relative;
   padding-top: 95px;
+  @media (max-width: 992px ){
+    padding-top: 0px;
+  }
+}
+.bg-primary {
+  background-color: $bg-primary!important;
 }
 a {
   text-decoration: none;
@@ -18,9 +24,7 @@ a {
 }
 
 /* Section: banner-area start */
-.navbar-dark .navbar-toggler-icon, .navbar-light .navbar-toggler-icon {
-  background-image: url(url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.55)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E));
-}
+
 .banner-area {
   display: block;
   position: relative;
@@ -93,7 +97,7 @@ a {
     color: #fff;
   }
 }
-
+/* Search form custom CSS start */
 .search-form input[type="search"] {
   color: #fff;
   border: none;
@@ -111,7 +115,11 @@ a {
   transform: translateY(-1.25rem) translateY(0.1rem) scale(0.8);
   margin-bottom: -0.25rem;
 }
+.form-outline{
+  max-width: 80%;
+}
 #btn-search {
+  max-width: 20%;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
   background-color: #2d2b70;
@@ -120,3 +128,4 @@ a {
     background-color: #83d5f7;
   }
 }
+/* Search form custom CSS end */

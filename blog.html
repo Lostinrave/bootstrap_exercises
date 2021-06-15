@@ -24,7 +24,7 @@
     <header id="header">
       <div class="container">
         <div class="row align-items-center justify-content-between d-flex">
-          <nav class="navbar navbar-expand-lg navbar-light">
+          <nav class="navbar navbar-expand-lg navbar-light opacity">
             <div class="nav-logo">
               <a class="navbar-brand" href="#">
                 <img src="assets/images/logo_lostinrave.svg" alt="lostinrave"
@@ -83,22 +83,28 @@
                   <a
                     class="nav-link dropdown-toggle"
                     href="#"
-                    id="navbarDropdown"
+                    id="navbarDropdown1"
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                     >pages</a
                   >
-                  <ul
-                    class="dropdown-menu dropdown_content"
-                    aria-labelledby="navbarDropdown"
-                  >
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                     <li><a class="dropdown-item" href="#">Link 1</a></li>
                     <li><a class="dropdown-item" href="#">Link 2</a></li>
                     <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown2"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        >Level 2</a
+                      >
                       <ul
-                        class="dropdown-menu"
-                        aria-labelledby="navbarDropdown"
+                        class="dropdown-menu submenu"
+                        aria-labelledby="navbarDropdown2"
                       >
                         <li><a class="dropdown-item" href="#">Link 1</a></li>
                         <li><a class="dropdown-item" href="#">Link 2</a></li>
@@ -136,7 +142,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
-            <div class="card bg-dark text-white text-center">
+            <div class="card bg-dark text-white text-center mt-3 mb-3">
               <img src="assets/images/blog1.webp" class="card-img" alt="..." />
               <div class="card-img-overlay overlay-bg-tcategory">
                 <h4 class="card-title mt-4">Social life</h4>
@@ -147,7 +153,7 @@
           </div>
 
           <div class="col-lg-4">
-            <div class="card bg-dark text-white text-center">
+            <div class="card bg-dark text-white text-center mt-3 mb-3">
               <img src="assets/images/blog2.webp" class="card-img" alt="..." />
               <div class="card-img-overlay overlay-bg-tcategory">
                 <h4 class="card-title mt-4">Social life</h4>
@@ -157,7 +163,7 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="card bg-dark text-white text-center">
+            <div class="card bg-dark text-white text-center mt-3 mb-3">
               <img src="assets/images/blog3.webp" class="card-img" alt="..." />
               <div class="card-img-overlay overlay-bg-tcategory">
                 <h4 class="card-title mt-4">Social life</h4>
@@ -267,7 +273,7 @@
           </div>
           <div class="col-lg-4">
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-12 ms-3 me-3">
                 <form class="search-form mt-5 mb-5" action="#">
                   <div class="input-group justify-content-center">
                     <div class="form-outline">
@@ -283,25 +289,35 @@
                     </button>
                   </div>
                 </form>
+
+              
+
               </div>
-              <div class="col-lg-12 text-center user_info">
+              <div class="col-lg-12 text-center ms-3 me-3">
                 <img
                   src="https://preview.colorlib.com/theme/personal/img/blog/xuser-info.png.pagespeed.ic.1A1JgX1vWU.webp"
                   alt="portrait"
                 />
-                <a href="#"><h4>Charlie Barber</h4></a>
+                <a href="#"><h4 class="mt-3">Charlie Barber</h4></a>
                 <p>Senior blog writer</p>
-                <ul class="social_links">
-                  <li>
+                <ul
+                  class="
+                    list-group list-group-horizontal
+                    justify-content-center
+                    mt-3
+                    mb-3
+                  "
+                >
+                  <li class="list-group-item">
                     <a href="#"><i class="lab la-facebook-square"></i></a>
                   </li>
-                  <li>
+                  <li class="list-group-item">
                     <a href="#"><i class="lab la-twitter"></i></a>
                   </li>
-                  <li>
+                  <li class="list-group-item">
                     <a href="#"><i class="lab la-twitch"></i></a>
                   </li>
-                  <li>
+                  <li class="list-group-item">
                     <a href="#"><i class="lab la-spotify"></i></a>
                   </li>
                 </ul>
@@ -312,10 +328,10 @@
                   quo vel repudiandae inventore quae sed quos.
                 </p>
               </div>
-              <div class="single_sidebar_widget">
-                <h4 class="pop_title">Popular posts</h4>
-                <div class="popular_post_list">
-                  <div class="single_popular_post_list">
+              <div class="col-lg-12 ms-3 me-3">
+                <h4 class="text-center mt-5 mb-5 bg-primary p-2 text-white">Popular posts</h4>
+                <div class="row">
+                  <div class="col">
                     <div class="thumb">
                       <img
                         src="https://preview.colorlib.com/theme/personal/img/blog/xpp1.jpg.pagespeed.ic.9V-S67p79i.webp"
@@ -511,9 +527,8 @@
       crossorigin="anonymous"
     ></script>
     <!-- MDB -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.5.0/mdb.min.js"></script>
+    <!-- Submenu JS -->
+    <script src="./assets/JS/submenu.js"></script>
   </body>
 </html>
